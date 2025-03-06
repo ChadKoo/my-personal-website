@@ -6,10 +6,16 @@
   }
   
   /* Body and overall layout */
+  html, body {
+    height: 100%; /* Make sure the body and html take up the full height */
+  }
+  
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Align items in a column (vertical direction) */
   }
   
   header {
@@ -35,6 +41,7 @@
   }
   
   main {
+    flex-grow: 1; /* Allow main content to take up available space */
     padding: 2rem;
   }
   
@@ -43,6 +50,7 @@
     padding: 1rem;
     background-color: #333;
     color: white;
+    margin-top: auto; /* Push footer to the bottom */
   }
   
   /* Section styles */
